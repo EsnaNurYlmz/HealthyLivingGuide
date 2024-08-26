@@ -20,6 +20,6 @@ class ViewController: UIViewController {
     @IBAction func GirişYapButton(_ sender: Any) {
         performSegue(withIdentifier: "toGiris", sender: nil)
     }
-    
+
 }
 

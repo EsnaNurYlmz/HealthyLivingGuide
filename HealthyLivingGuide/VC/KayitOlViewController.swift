@@ -25,13 +25,13 @@ class KayitOlViewController: UIViewController {
               let sifre = SifreTextField.text, !sifre.isEmpty,
               let tekrarsifre = TekrarSifreTextField.text, !tekrarsifre.isEmpty,
               sifre == tekrarsifre else {
-            print("Lütfen tüm alanları doldurunuz.")
+            print("Lütfen tüm alanları doldurunuz.!!")
             return
         }
         Auth.auth().createUser(withEmail: email, password:sifre){ authResult, error in
             if let error = error {
                 print("Kayıt hatası: \(error.localizedDescription)")
-                print("Hatalı kayıt oluşturdunuz.")
+                print("Hatalı kayıt oluşturdunuz.!!")
                 self.showErrorAlert(message: error.localizedDescription)
             } else {
                 print("Kayıt başarılı")
@@ -52,7 +52,7 @@ class KayitOlViewController: UIViewController {
                 self.showErrorAlert(message: error.localizedDescription)
                 
             } else {
-                print("Kullanıcı veritabanına başarıyla kaydedildi")
+                print("Kullanıcı veritabanına başarıyla kaydedildi!!")
             }
         }
     }
