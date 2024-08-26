@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func KayitOlButton(_ sender: Any) {
+        performSegue(withIdentifier: "toKayit", sender: nil)
+    }
+    @IBAction func GirişYapButton(_ sender: Any) {
+        performSegue(withIdentifier: "toGiris", sender: nil)
+    }
+    
 }
 

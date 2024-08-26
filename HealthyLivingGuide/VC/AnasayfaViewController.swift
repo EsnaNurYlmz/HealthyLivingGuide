@@ -15,15 +15,12 @@ class AnasayfaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func saglikliBeslenmeButton(_ sender: Any) {
+        performSegue(withIdentifier: "toSB", sender: nil)
     }
-    */
-
+    
+    @IBAction func hastaliksalBeslenmeButton(_ sender: Any) {
+        performSegue(withIdentifier: "toHB", sender: nil)
+    }
+    
 }
